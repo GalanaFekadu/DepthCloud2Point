@@ -4,7 +4,7 @@ from torch import nn
 
 class DepthCloud2Point(nn.Module):
     def __init__(self, initial_point=0):
-        super(Pixel2Point, self).__init__()
+        super(DepthCloud2Point, self).__init__()
         self.layer1 = self.conv_module(1, 32)
         self.layer2 = self.conv_module(32, 64)
         self.layer3 = self.conv_module(64, 128)
